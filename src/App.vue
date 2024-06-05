@@ -1,16 +1,20 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+<template>
+  <div class="bg-gray-100 min-h-screen">
+    <Header />
+    <router-view />
+  </div>
+</template>
+
+<script>
+import { defineComponent } from 'vue';
+import Header from './components/Header.vue';
+
+export default defineComponent({
+  components: {
+    Header,
+  },
+});
 </script>
 
-<template>
-  <header>
-    <div class="bg-blue-200">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
-</template>
+<style scoped>
+</style>
