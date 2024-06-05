@@ -49,7 +49,7 @@ import About from '@/components/About.vue'
 
 export default defineComponent({
   components: {
-    About
+    About,
   }
 })
 </script>
